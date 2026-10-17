@@ -1,0 +1,28 @@
+name: Provider integration
+description: Request hosted provider callback support or report client compatibility.
+title: "Provider integration: "
+body:
+  - type: input
+    id: provider
+    attributes:
+      label: Provider and public documentation URL
+    validations:
+      required: true
+  - type: input
+    id: callback
+    attributes:
+      label: Exact public HTTPS callback URI or local loopback pattern
+      description: Do not include codes, state values, tokens or other secrets.
+    validations:
+      required: true
+  - type: textarea
+    id: oauth
+    attributes:
+      label: OAuth identity and requested scopes
+      description: Public metadata URL or DCR, PKCE support, client/version and read or read/write scope. No credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Observed result and redacted reproduction

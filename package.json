@@ -1,0 +1,15 @@
+{
+  "name": "proxyai-mcp-integration",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public integration kit for the hosted ProxyAI MCP service",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "probe": "node scripts/probe.mjs"
+  }
+}

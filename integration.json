@@ -1,0 +1,56 @@
+{
+  "name": "ProxyAI",
+  "version": "1.0.0",
+  "description": "Support tickets and bounded Agent Task reports for ProxyAI accounts.",
+  "transport": "streamable-http",
+  "endpoint": "https://www.proxyai.app/api/mcp",
+  "authentication": {
+    "type": "oauth2",
+    "protected_resource_metadata": "https://www.proxyai.app/.well-known/oauth-protected-resource",
+    "authorization_server_metadata": "https://www.proxyai.app/.well-known/oauth-authorization-server",
+    "grant_types": [
+      "authorization_code",
+      "refresh_token"
+    ],
+    "token_endpoint_auth_method": "none",
+    "pkce": "S256",
+    "client_registration": [
+      "client_id_metadata_document",
+      "dynamic_client_registration"
+    ],
+    "scopes": [
+      "read",
+      "write"
+    ]
+  },
+  "tools": {
+    "read": [
+      "list_bots",
+      "list_tickets",
+      "get_ticket",
+      "list_agent_tasks",
+      "get_agent_task",
+      "list_agent_runs",
+      "get_agent_run",
+      "list_agent_templates"
+    ],
+    "write": [
+      "reply_ticket",
+      "set_ticket_status",
+      "set_ticket_tags",
+      "archive_ticket",
+      "approve_ticket_agent_draft",
+      "dismiss_ticket_agent_draft",
+      "create_agent_task",
+      "run_agent_task",
+      "decide_agent_run",
+      "pause_agent_task",
+      "resume_agent_task"
+    ]
+  },
+  "documentation": "https://www.proxyai.app/help/pro-tips/proxyai-mcp",
+  "support": "https://www.proxyai.app/contact",
+  "privacy": "https://www.proxyai.app/privacy",
+  "terms": "https://www.proxyai.app/terms",
+  "schema_note": "Repository integration summary, not an MCP Registry server.json. Discover current tool schemas using authenticated tools/list."
+}

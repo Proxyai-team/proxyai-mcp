@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "proxyai": {
+      "type": "http",
+      "url": "https://www.proxyai.app/api/mcp"
+    }
+  }
+}
