@@ -4,9 +4,12 @@
 
 Connect an MCP-capable assistant to ProxyAI support tickets and Agent Tasks.
 
-**Hosted server:** `https://www.proxyai.app/api/mcp`  
-**Transport:** Streamable HTTP  
-**Authentication:** OAuth authorization code with PKCE S256  
+**Hosted server:** `https://www.proxyai.app/api/mcp`
+
+**Transport:** Streamable HTTP
+
+**Authentication:** OAuth authorization code with PKCE S256
+
 **Tools:** 8 reads and 11 writes
 
 This repository contains client configurations, provider integration guidance, the OpenAI plugin package, and dependency-free validation/probe scripts for the hosted service. Use your own ProxyAI account and its existing Helpdesk or Agent Tasks features. Normal feature capacity limits, task usage charges and email fees apply. A public endpoint still requires OAuth sign-in for account data.
